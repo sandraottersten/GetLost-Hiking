@@ -43,6 +43,7 @@ html {
             .grid {
                 display: grid;
                 width:100vw;
+                grid-gap: .5rem;
                 grid-template-columns: repeat (1, 1fr);
                 grid-template-rows: $baseline $baseline $baseline $baseline $baseline;
                 grid-template-areas:
