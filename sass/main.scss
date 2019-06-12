@@ -1,3 +1,7 @@
+
+@import 'typography';
+@import 'variables';
+
 html {
     margin: 0;
     max-width: 100vw;
@@ -6,5 +10,116 @@ html {
 
     body {
         margin: 0;
+        
+        main {
+            
+            nav {
+                display:flex;
+                flex-direction: column;
+                
+            }
+
+            footer {
+                display:flex;
+                flex-direction: column;
+
+
+            }
+
+            .hero {
+                height: 300px;
+                background-image: url(../img/lucas-clara-579404-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    padding: 0;
+                    margin: 0;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    h5 {
+                        padding: 0 1rem;
+                        color: white;
+                        text-align: center;
+                    }
+                    
+
+                } 
+            }
+
+            .abisko {
+                    height: 300px;
+                    background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
+                    background-size:cover; 
+                    article {
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: center;
+                        padding: 3rem;
+    
+                    }       
+            
+                }
+            .gammelskogen {
+                height: 300px;
+                background-image: url(../img/tim-swaan-45717-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 3rem;
+
+                    }
+
+                }
+            .kungsleden {
+                height: 300px;
+                background-image: url(../img/lucas-clara-579404-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    height: 300px;                        display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                     align-items: center;
+                     padding: 3rem;
+    
+                     }
+    
+                 }
+    
+        }
     }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* for tablets */
+    
+    html {
+        body {
+            main {
+
+            }
+        }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    html {
+        body {
+            main {
+
+            }
+        }
+  }
 }
