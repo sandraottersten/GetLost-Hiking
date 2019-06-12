@@ -1,6 +1,8 @@
 @import 'typography';
 @import 'variables';
 
+$baseline: 320px;
+
 html {
 
     body {
@@ -27,6 +29,41 @@ html {
                     
 
                 } 
+            }
+
+            .grid {
+                display: grid;
+                width:100vw;
+                grid-template-columns: repeat (1, 1fr);
+                grid-template-rows: $baseline $baseline $baseline $baseline $baseline;
+                grid-template-areas:
+                "img-ut" "img-va" "img-de" "img-bl" "img-ti";
+
+                .img-utrustning {
+                    grid-area: img-ut;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/josiah-weiss-435592-unsplash.jpg);
+                    background-size:cover;     
+                }    
+                .img-vandringar {
+                    grid-area: img-va;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/benjamin-davies-332625-unsplash.jpg);
+                    background-size:cover;     
+                }
+                .img-destination {
+                    grid-area: img-de;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/carl-cerstrand-136810-unsplash.jpg);
+                    background-size:cover;  
+                }
+                .img-bloggare {
+                    grid-area: img-bl;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/patrick-hendry-249148-unsplash.jpg);
+                    background-size:cover;     
+                }
+                .img-tips {
+                    grid-area: img-ti;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/alice-donovan-rouse-199230-unsplash.jpg);
+                    background-size:cover;     
+                }
             }
         }
     }
