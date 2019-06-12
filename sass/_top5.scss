@@ -1,0 +1,56 @@
+@import 'typography';
+@import 'variables';
+
+html {
+
+    body {
+
+        main {
+
+            .abisko {
+                height: 300px;
+                background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 3rem;
+
+                }       
+        
+            }
+            .gammelskogen {
+                height: 300px;
+                background-image: url(../img/tim-swaan-45717-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 3rem;
+
+                    }
+
+            }
+            .kungsleden {
+                height: 300px;
+                background-image: url(../img/lucas-clara-579404-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    height: 300px;                        display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 3rem;
+
+                    }
+
+            }
+        }
+    }
+}

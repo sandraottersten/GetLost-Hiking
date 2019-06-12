@@ -1,0 +1,33 @@
+@import 'typography';
+@import 'variables';
+
+html {
+
+    body {
+
+        main {
+
+            .hero {
+                height: 300px;
+                background-image: url(../img/lucas-clara-579404-unsplash.jpg);
+                background-size:cover; 
+                article {
+                    padding: 0;
+                    margin: 0;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    h5 {
+                        padding: 0 1rem;
+                        color: white;
+                        text-align: center;
+                    }
+                    
+
+                } 
+            }
+        }
+    }
+}
