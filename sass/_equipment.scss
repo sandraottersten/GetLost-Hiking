@@ -6,8 +6,102 @@ html {
     body {
 
         main {
+            .equp {
+                max-width: 300px;
+                width: 100%;
+                h1 {
+                    padding: .5rem;
+                    color:black;
+                }
+                h5{
+                    padding: 0 1rem;
+                }
 
-          
+            }
+            .grid {              
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                    .card {   
+                    position: relative;
+                    height: 200px;
+                    width: 300px;
+                    background-color: transparent;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;                
+
+                    .front {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        h3{
+                            color: white;
+                            padding: 0 .5rem;
+                        }
+                        &#shoe {
+                            background-image: url(../img/christopher-jolly-147389-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#bag{
+                            background-image: url(../img/josiah-weiss-435592-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#tent{
+                            background-image: url(../img/sayan-nath-1457796-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#under{
+                            background-image: url(../img/nazar-lev-1380176-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#shell {
+                            background-image: url(../img/avel-chuklanov-176331-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#rain {
+                            background-image: url(../img/nguy-n-ha-1225059-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#food {
+                            background-image: url(../img/easy-camping-food.jpg);
+                            background-size:cover; 
+                        }
+                        &#first {
+                            background-image: url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
+                            background-size:cover; 
+                        }
+                        &#other {
+                            background-image: url(../img/alice-donovan-rouse-199230-unsplash.jpg);
+                            background-size:cover; 
+                        }
+
+
+
+                        &:hover {
+                            transform: rotateY(180deg);
+                        }
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                    }
+
+                    .back {
+                        background-color: dodgerblue;
+                        color: white;
+                        transform: rotateY(180deg);
+                        
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                    
+                    
+                    }
+                
+                }
+
+            
+            }
         }
     }
 }
