@@ -6,7 +6,27 @@ html {
     body {
 
         main {
+            nav {
+                display:flex;
+                flex-direction: column;
+                
+            }
 
+            footer {
+                display:flex;
+                flex-direction: column;
+
+
+            }
+            .intro{
+                article{
+                    text-align: center;
+                h1{
+                    color: black;
+                    
+                }
+            }
+        }
             .abisko {
                 height: 300px;
                 background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
@@ -16,9 +36,19 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    align-items: center;
-                    padding: 3rem;
-
+                    align-items: left;
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                    h1{
+                        font-size: 10rem;
+                        margin-bottom: -5rem;
+                    }
+                    h5{
+                        font-size: 2rem;
+                        color: white;
+                        padding-bottom: 3rem;
+                        padding-left: 0.5rem;
+                    }
                 }       
         
             }
@@ -31,10 +61,19 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    align-items: center;
-                    padding: 3rem;
-
+                    align-items: left;
+                    padding-top: 6rem;
+                    h1{
+                        font-size: 10rem;
+                        margin-bottom: -5rem;
                     }
+                    h5{
+                        font-size: 2rem;
+                        color: white;
+                        padding-bottom: 3rem;
+                        padding-left: 0.5rem;
+                    }
+                }
 
             }
             .kungsleden {
@@ -45,10 +84,20 @@ html {
                     height: 300px;                        display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    align-items: center;
-                    padding: 3rem;
-
+                    align-items: left;
+                    padding-top: 6rem;
+                    h1{
+                        font-size: 10rem;
+                        margin-bottom: -5rem;
                     }
+                    h5{
+                        font-size: 2rem;
+                        color: white;
+                        padding-bottom: 3rem;
+                        padding-left: 0.5rem;
+                    }
+
+                }
 
             }
         }
