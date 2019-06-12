@@ -38,6 +38,13 @@ h4 {
   font-size: 20px;
 }
 
+.btn {
+  border: solid black 1px;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -71,6 +78,13 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.btn {
+  border: solid black 1px;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 html body main .hero {
@@ -195,6 +209,13 @@ h4 {
   font-size: 20px;
 }
 
+.btn {
+  border: solid black 1px;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 html body main nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,11 +237,28 @@ html body main footer {
 }
 
 html body main .intro article {
+  padding: 3rem;
   text-align: center;
 }
 
-html body main .intro article h1 {
+html body main .intro article h3 {
   color: black;
+}
+
+html body main .tip1, html body main .tip2, html body main .tip3 {
+  padding: 3rem;
+}
+
+html body main .btndiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html body main .abisko {
@@ -249,14 +287,14 @@ html body main .abisko article {
 }
 
 html body main .abisko article h1 {
-  font-size: 10rem;
-  margin-bottom: -5rem;
+  font-size: 8rem;
+  margin-bottom: -3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-html body main .abisko article h5 {
-  font-size: 2rem;
+html body main .abisko article h2 {
   color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   padding-left: 0.5rem;
 }
 
@@ -285,14 +323,14 @@ html body main .gammelskogen article {
 }
 
 html body main .gammelskogen article h1 {
-  font-size: 10rem;
-  margin-bottom: -5rem;
+  font-size: 8rem;
+  margin-bottom: -3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-html body main .gammelskogen article h5 {
-  font-size: 2rem;
+html body main .gammelskogen article h2 {
   color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   padding-left: 0.5rem;
 }
 
@@ -321,14 +359,14 @@ html body main .kungsleden article {
 }
 
 html body main .kungsleden article h1 {
-  font-size: 10rem;
-  margin-bottom: -5rem;
+  font-size: 8rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -3rem;
 }
 
-html body main .kungsleden article h5 {
-  font-size: 2rem;
+html body main .kungsleden article h2 {
   color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   padding-left: 0.5rem;
 }
 
@@ -367,6 +405,13 @@ h4 {
   font-size: 20px;
 }
 
+.btn {
+  border: solid black 1px;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -400,6 +445,13 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.btn {
+  border: solid black 1px;
+  border-radius: 3px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 html {
