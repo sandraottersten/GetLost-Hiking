@@ -7,14 +7,14 @@ html {
 
         main {
             .equp {
-                max-width: 300px;
+                max-width: 100vw;
                 width: 100%;
                 h1 {
-                    padding: .5rem;
+                    padding: 1rem;
                     color:black;
                 }
                 h5{
-                    padding: 0 1rem;
+                    padding: 1rem;
                 }
 
             }
@@ -23,9 +23,10 @@ html {
                 grid-template-columns: repeat(1, 1fr);
 
                     .card {   
-                    position: relative;
-                    height: 200px;
-                    width: 300px;
+                    //position: relative;
+                    height: 250px;
+                    max-width: 100vw;
+                    width: 100%;
                     background-color: transparent;
                     transition: transform 0.8s;
                     transform-style: preserve-3d;                
@@ -34,10 +35,10 @@ html {
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-end;
-                        h3{
-                            color: white;
-                            padding: 0 .5rem;
-                        }
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/lucas-clara-579404-unsplash.jpg);
+                        background-size:cover; 
+                        
+                        
                         &#shoe {
                             background-image: url(../img/christopher-jolly-147389-unsplash.jpg);
                             background-size:cover; 
