@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        header{
+            text-align: center;
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 300px;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            border: transparent;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 49.99999%;
+        }
+
+        .responsive1 {
+            padding: 0 6px;
+            float: left;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>TIPS FÖR NYBÖRJAREN</h2>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. </h4>
+    </header>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#first">
+                <img src="/img/var.jpg" alt="Cinque Terre" width="650" height="432">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#second">
+                <img src="/img/dos.jpg" alt="Forest" width="650" height="432">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#third">
+                <img src="/img/nar.jpg" alt="Northern Lights" width="650" height="432">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#fourth">
+                <img src="/img/hur.jpg" alt="Mountains" width="650" height="432">
+            </a>
+        </div>
+    </div>
+
+    <div class="responsive1">
+        <div class="gallery" id="first">
+            <img src="/img/adolfo-felix-1072181-unsplash.jpg" alt="Cinque Terre" width="100%">
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+        </div>
+    </div>
+
+
+    <div class="responsive1" id="second">
+        <div class="gallery">
+            <img src="/img/jordan-mcqueen-99269-unsplash.jpg" alt="Forest" width="100%">
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+
+    <div class="responsive1" id="third">
+        <div class="gallery">
+            <img src="/img/anete-lusina-382329-unsplash.jpg" alt="Northern Lights" width="100%">
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+
+    <div class="responsive1" id="fourth">
+        <div class="gallery">
+            <img src="/img/anastasia-petrova-193818-unsplash.jpg" alt="Mountains" width="100%">
+            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
