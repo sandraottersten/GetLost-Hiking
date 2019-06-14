@@ -5,6 +5,10 @@
 
 nav{
 	padding: 10px;
+	padding-bottom: 30px;
+}
+.header{
+	text-align: center;
 }
 
 /* Menu */
@@ -120,9 +124,7 @@ ul.grt-menu li.active a:after  {
 
 
 /* Desktop only style */
-@media (min-width:768px) {
-
-	
+@media (min-width:992px) {
 
 	ul.grt-menu li a:hover {
 		color:#FFF;
@@ -133,7 +135,8 @@ ul.grt-menu li.active a:after  {
 /* Tablet only style */
 @media (min-width:768px) and (max-width:991px) {
 	ul.grt-menu li a {
-		font-size:18px;
+		font-size:16px;
+		padding: 5px;
 	}
 }
 
@@ -151,7 +154,7 @@ ul.grt-menu li.active a:after  {
 		right:0;
 		top:10px;
 		background:#FFF;
-		color:#3A5B73;
+		color:#3d3d3d;
 		margin:0;
 		padding:0;
 		cursor:pointer;
@@ -162,7 +165,8 @@ ul.grt-menu li.active a:after  {
 	.grt-mobile-button .line1, .grt-mobile-button .line2, .grt-mobile-button .line3 {
 		width: 35px;
 		height: 4px;
-		background-color: #3A5B73;
+		border-bottom: 2px solid #3A5B73;
+		background-color: #333;
 		margin: 6px 0;
 		transition: 0.4s;
 		display:block;
