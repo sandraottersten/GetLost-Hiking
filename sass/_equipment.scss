@@ -17,13 +17,13 @@ html {
                     padding: 1rem;
                 }
 
-            }
+             }
             .grid {              
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
 
                     .card {   
-                    //position: relative;
+                    position: relative;
                     height: 250px;
                     max-width: 100vw;
                     width: 100%;
@@ -42,26 +42,33 @@ html {
                         &#shoe {
                             background-image: url(../img/christopher-jolly-147389-unsplash.jpg);
                             background-size:cover; 
+                            background-position: bottom;
+                            
                         }
                         &#bag{
                             background-image: url(../img/josiah-weiss-435592-unsplash.jpg);
-                            background-size:cover; 
+                            background-size:cover;
+                            background-position: center; 
                         }
                         &#tent{
                             background-image: url(../img/sayan-nath-1457796-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#under{
                             background-image: url(../img/nazar-lev-1380176-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#shell {
                             background-image: url(../img/avel-chuklanov-176331-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#rain {
                             background-image: url(../img/nguy-n-ha-1225059-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#food {
                             background-image: url(../img/easy-camping-food.jpg);
@@ -74,6 +81,7 @@ html {
                         &#other {
                             background-image: url(../img/alice-donovan-rouse-199230-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
 
 
@@ -105,4 +113,84 @@ html {
             }
         }
     }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+    
+    html {
+        body {
+            main {.equp {
+                max-width: 90vw;
+                width: 100%;
+                margin: 0 auto;
+                h1 {
+                    padding: 1rem 0rem;
+                    color:black;
+                }
+                h5 {
+                    padding: 1rem 0rem;
+                }
+            }
+            .grid {
+                max-width: 90vw;
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 3rem;
+
+                .card {   
+                    height: 100%;
+                    width: 100%;
+                }  
+
+            }
+            }
+        }
+  }
+}
+
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    
+    html {
+        
+        body {
+            
+            main {
+                
+                
+                .equp {
+                    max-width: 90vw;
+                    width: 100%;
+                    margin: 0 auto;
+                    h1 {
+                        padding: 1rem 0rem;
+                        color:black;
+                    }
+                    h5{
+                        padding: 1rem 0rem;
+                    }
+                }
+                .grid {
+                    max-width: 90vw;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 3rem;
+
+                    .card {   
+                        height: 100%;
+                        width: 100%;
+                    }  
+
+                }
+            }
+        }
+  }
 }
