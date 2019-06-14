@@ -21,8 +21,38 @@
         </nav>
         <section class="hero">
             <article>
-                <h1>top 5</h1>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                    <div class="slider-img">
+                        <img src="img/lucas-clara-579404-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>    
+                    </div>
+
+                    <div class="slider-img">
+                        <img src="img/tim-swaan-45717-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>     
+                    </div>
+
+                    <div class="slider-img">
+                        <img src="img/nina-lindgren-147684-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>        
+                    </div>
+                    
+                    <div class="slider-img">
+                        <img src="img/benjamin-davies-332625-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>    
+                    </div>
+             
             </article>
         </section>
         <section class="intro">
@@ -63,4 +93,22 @@
         </footer> -->
     </main>
 </body>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slider-img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+</script>
 </html>
