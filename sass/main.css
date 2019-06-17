@@ -635,22 +635,26 @@ html body main .responsive .container h3 {
 }
 
 html body main .responsive .container#var {
-  background-image: url(../img/var.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/var.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/var.jpg);
   background-size: cover;
 }
 
 html body main .responsive .container#dos {
-  background-image: url(../img/dos.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/dos.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/dos.jpg);
   background-size: cover;
 }
 
 html body main .responsive .container#nar {
-  background-image: url(../img/nar.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/nar.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/nar.jpg);
   background-size: cover;
 }
 
 html body main .responsive .container#hur {
-  background-image: url(../img/hur.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/hur.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/hur.jpg);
   background-size: cover;
 }
 
