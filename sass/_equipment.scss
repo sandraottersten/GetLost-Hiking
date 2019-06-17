@@ -83,10 +83,10 @@ html {
                         }
 
 
-                        &:hover {
+                        &.flipped {
                             transform: rotateY(180deg);
+                            
                         }
-                        
                         position: absolute;
                         width: 100%;
                         height: 100%;

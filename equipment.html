@@ -11,11 +11,9 @@
 <body>
     <main>
         <section class="equp" tabindex="0">
-            <h1>Välj rätt utrustning</h1>
+            <h3>Välj rätt utrustning</h3>
             <h5>Det är en härlig upplevelse att vandra i naturen den blir bättre med rätt utrustning. Här har vi samlat lite saker att tänka på när man ska skaffa sig utrustning inför en vandringsresa. Klicka på bilderna för att få mer information. </h5>
-        </section>
-        <!--emmet code: (section.inner>article.front>h2^article.back>h1+p)*9-->
-       
+        </section>         
         <section class="grid">
         <section class="card" tabindex="1">
             <article class="front" id="shoe" alt="skor">
@@ -103,3 +101,18 @@
     
 </body>
 </html>
+
+<script>
+
+var card = document.querySelector('.card');
+card.addEventListener('click', function() { 
+    card.classList.toggle('flipped');
+    console.log('hej');
+
+})
+
+
+</script>
+
+<!--emmet code: (section.inner>article.front>h2^article.back>h1+p)*9-->
+     
