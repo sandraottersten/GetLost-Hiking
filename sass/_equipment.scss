@@ -7,25 +7,27 @@ html {
 
         main {
             .equp {
-                max-width: 300px;
+                max-width: 100vw;
                 width: 100%;
                 h1 {
-                    padding: .5rem;
+                    padding: 1rem;
                     color:black;
                 }
                 h5{
-                    padding: 0 1rem;
+                    padding: 1rem;
+                    max-width: 900px;
                 }
 
-            }
+             }
             .grid {              
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0;
 
-                    .card {   
-                    position: relative;
-                    height: 200px;
-                    width: 300px;
+                    .card {
+                    height: 100%;
+                    max-width: 100vw;
+                    width: 100%;
                     background-color: transparent;
                     transition: transform 0.8s;
                     transform-style: preserve-3d;                
@@ -33,52 +35,57 @@ html {
                     .front {
                         display: flex;
                         justify-content: flex-start;
-                        align-items: flex-end;
-                        h3{
-                            color: white;
-                            padding: 0 .5rem;
-                        }
+                        align-items: flex-end;                          
+                        
                         &#shoe {
-                            background-image: url(../img/christopher-jolly-147389-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)), url(../img/christopher-jolly-147389-unsplash.jpg);
                             background-size:cover; 
+                            background-position: bottom;
+                            
                         }
                         &#bag{
-                            background-image: url(../img/josiah-weiss-435592-unsplash.jpg);
-                            background-size:cover; 
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)), url(../img/josiah-weiss-435592-unsplash.jpg);
+                            background-size:cover;
+                            background-position: center; 
                         }
                         &#tent{
-                            background-image: url(../img/sayan-nath-1457796-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/sayan-nath-1457796-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#under{
-                            background-image: url(../img/nazar-lev-1380176-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/nazar-lev-1380176-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#shell {
-                            background-image: url(../img/avel-chuklanov-176331-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/avel-chuklanov-176331-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#rain {
-                            background-image: url(../img/nguy-n-ha-1225059-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/nguy-n-ha-1225059-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
                         &#food {
-                            background-image: url(../img/easy-camping-food.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/easy-camping-food.jpg);
                             background-size:cover; 
                         }
                         &#first {
-                            background-image: url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
                             background-size:cover; 
                         }
                         &#other {
-                            background-image: url(../img/alice-donovan-rouse-199230-unsplash.jpg);
+                            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/alice-donovan-rouse-199230-unsplash.jpg);
                             background-size:cover; 
+                            background-position: center;
                         }
 
 
-
-                        &:hover {
+                        &.flipped {
                             transform: rotateY(180deg);
+                            
                         }
                         position: absolute;
                         width: 100%;
@@ -88,7 +95,7 @@ html {
 
                     .back {
                         background-color: dodgerblue;
-                        color: white;
+                        color: violet;
                         transform: rotateY(180deg);
                         
                         width: 100%;
@@ -98,10 +105,84 @@ html {
                     
                     }
                 
-                }
-
-            
+                }            
             }
         }
     }
 }
+
+
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+        
+    html {
+        body {
+            main {
+                .equp {
+                max-width: 90vw;
+                width: 100%;
+                margin: 0 auto;
+                    h1 {
+                        padding: 1rem 0rem;
+                        color:black;
+                    }
+                    h5 {
+                        padding: 1rem 0rem;
+                    }
+                }
+                .grid {
+                    max-width: 90vw;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 3rem;
+
+                    .card {   
+                        height: 100%;
+                        width: 100%;
+                    }  
+
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */    
+    html {        
+        body {            
+            main {
+                .equp {
+                    max-width: 90vw;
+                    width: 100%;
+                    margin: 0 auto;
+                    h1 {
+                        padding: 1rem 0rem;
+                        color:black;
+                    }
+                    h5{
+                        padding: 1rem 0rem;
+                    }
+                }
+                .grid {
+                    max-width: 90vw;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 3rem;
+
+                    .card {   
+                        height: 100%;
+                        width: 100%;
+                    }  
+                }
+            }
+        }
+    }
+}
+
