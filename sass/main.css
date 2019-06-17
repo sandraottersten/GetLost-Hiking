@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -33,6 +33,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -115,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -125,6 +126,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -409,7 +411,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -419,6 +421,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -562,15 +565,15 @@ html body main .abisko article {
 
 html body main .abisko article h1 {
   font-size: 8rem;
-  margin-bottom: -3rem;
+  margin-bottom: -1.5rem;
   font-family: 'Roboto', sans-serif;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 html body main .abisko article h2 {
   color: white;
-  padding-bottom: 5rem;
-  padding-left: 0.5rem;
+  padding-bottom: 6.5rem;
+  padding-left: 1rem;
 }
 
 html body main .gammelskogen {
@@ -600,15 +603,15 @@ html body main .gammelskogen article {
 
 html body main .gammelskogen article h1 {
   font-size: 8rem;
-  margin-bottom: -3rem;
+  margin-bottom: -1.5rem;
   font-family: 'Roboto', sans-serif;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 html body main .gammelskogen article h2 {
   color: white;
-  padding-bottom: 5rem;
-  padding-left: 0.5rem;
+  padding-bottom: 6.5rem;
+  padding-left: 1rem;
 }
 
 html body main .kungsleden {
@@ -638,15 +641,15 @@ html body main .kungsleden article {
 
 html body main .kungsleden article h1 {
   font-size: 8rem;
+  margin-bottom: -1.5rem;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: -3rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
 html body main .kungsleden article h2 {
   color: white;
-  padding-bottom: 5rem;
-  padding-left: 0.5rem;
+  padding-bottom: 6.5rem;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -715,7 +718,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -725,6 +728,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -788,17 +792,18 @@ h5 {
 }
 
 html body main .equp {
-  max-width: 300px;
+  max-width: 100vw;
   width: 100%;
 }
 
 html body main .equp h1 {
-  padding: .5rem;
+  padding: 1rem;
   color: black;
 }
 
 html body main .equp h5 {
-  padding: 0 1rem;
+  padding: 1rem;
+  max-width: 900px;
 }
 
 html body main .grid {
@@ -806,12 +811,13 @@ html body main .grid {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0;
 }
 
 html body main .grid .card {
-  position: relative;
-  height: 200px;
-  width: 300px;
+  height: 100%;
+  max-width: 100vw;
+  width: 100%;
   background-color: transparent;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
@@ -838,70 +844,139 @@ html body main .grid .card .front {
           backface-visibility: hidden;
 }
 
-html body main .grid .card .front h3 {
-  color: white;
-  padding: 0 .5rem;
-}
-
 html body main .grid .card .front#shoe {
-  background-image: url(../img/christopher-jolly-147389-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/christopher-jolly-147389-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/christopher-jolly-147389-unsplash.jpg);
   background-size: cover;
+  background-position: bottom;
 }
 
 html body main .grid .card .front#bag {
-  background-image: url(../img/josiah-weiss-435592-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/josiah-weiss-435592-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/josiah-weiss-435592-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 html body main .grid .card .front#tent {
-  background-image: url(../img/sayan-nath-1457796-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/sayan-nath-1457796-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/sayan-nath-1457796-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 html body main .grid .card .front#under {
-  background-image: url(../img/nazar-lev-1380176-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/nazar-lev-1380176-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/nazar-lev-1380176-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 html body main .grid .card .front#shell {
-  background-image: url(../img/avel-chuklanov-176331-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/avel-chuklanov-176331-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/avel-chuklanov-176331-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 html body main .grid .card .front#rain {
-  background-image: url(../img/nguy-n-ha-1225059-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/nguy-n-ha-1225059-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/nguy-n-ha-1225059-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 html body main .grid .card .front#food {
-  background-image: url(../img/easy-camping-food.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/easy-camping-food.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/easy-camping-food.jpg);
   background-size: cover;
 }
 
 html body main .grid .card .front#first {
-  background-image: url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
   background-size: cover;
 }
 
 html body main .grid .card .front#other {
-  background-image: url(../img/alice-donovan-rouse-199230-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
   background-size: cover;
+  background-position: center;
 }
 
-html body main .grid .card .front:hover {
+html body main .grid .card .front.flipped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 html body main .grid .card .back {
   background-color: dodgerblue;
-  color: white;
+  color: violet;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  /* for tablets */
+  html body main .equp {
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body main .equp h1 {
+    padding: 1rem 0rem;
+    color: black;
+  }
+  html body main .equp h5 {
+    padding: 1rem 0rem;
+  }
+  html body main .grid {
+    max-width: 90vw;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+  html body main .grid .card {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* For desktop: */
+  html body main .equp {
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body main .equp h1 {
+    padding: 1rem 0rem;
+    color: black;
+  }
+  html body main .equp h5 {
+    padding: 1rem 0rem;
+  }
+  html body main .grid {
+    max-width: 90vw;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+  html body main .grid .card {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 a {
@@ -924,7 +999,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -934,6 +1009,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
