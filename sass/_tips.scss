@@ -2,12 +2,95 @@
 @import 'variables';
 
 html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
 
     body {
 
-        main {
+        main { 
+            section {
+            
+                .intro{
+                margin: 30px;
+                text-align: center;
+                }
+            }
+            .responsive{
+            padding: 0 10px;
+            width: 100%; 
 
-          
+                .container {
+                    position: relative;
+                    color: white;
+                    margin:0;
+
+                    .gallery{
+
+                        img{
+                            width: 99%;
+                            height: 300px;
+                            object-fit: cover;
+
+                            .bottom-left {
+                                position: absolute;
+                                bottom: 30px;
+                                left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .responsive1{
+                padding: 0 10px;
+                float: left;
+                width: 100%; 
+    
+                        .gallery1{
+    
+                            img{
+                                width: 100vw;
+                                height: 300px;
+                                object-fit: cover;
+                                margin: 0;
+    
+                                .bottom-left {
+                                    position: absolute;
+                                    bottom: 30px;
+                                    left: 30px;
+                                }
+                            }
+                        }
+                    .desc{
+                        padding-top: 30px;
+                        padding-bottom: 30px; 
+                        max-width: 80vw;
+                        border: transparent;
+                        margin: 0 auto;
+
+                        .fa{
+                            display:block;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+                    }
+            }
         }
     }
+    
+}
+@media only screen and (min-width: 600px) {
+    html{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; 
+
+            body{
+                 .responsive {
+                width: 49.9999%;
+                margin: 6px 0;
+                }
+            }
+    }
+    
 }
