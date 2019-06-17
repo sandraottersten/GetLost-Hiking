@@ -318,8 +318,8 @@ html body main .grid .img-utrustning {
 }
 
 html body main .grid .img-utrustning:hover h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transform: translate(0.5rem, -0.5rem);
@@ -336,8 +336,8 @@ html body main .grid .img-vandringar {
 }
 
 html body main .grid .img-vandringar:hover h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transform: translate(0.5rem, -0.5rem);
@@ -355,8 +355,8 @@ html body main .grid .img-destination {
 }
 
 html body main .grid .img-destination:hover h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transform: translate(0.5rem, -0.5rem);
@@ -373,8 +373,8 @@ html body main .grid .img-bloggare {
 }
 
 html body main .grid .img-bloggare:hover h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transform: translate(0.5rem, -0.5rem);
@@ -391,8 +391,8 @@ html body main .grid .img-tips {
 }
 
 html body main .grid .img-tips:hover h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .3s;
+  transition: .3s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   -webkit-transform: translate(0.5rem, -0.5rem);
@@ -622,6 +622,11 @@ html body main .tip1, html body main .tip2, html body main .tip3 {
   padding: 3rem;
 }
 
+html body main .tip1 h4, html body main .tip2 h4, html body main .tip3 h4 {
+  padding-top: 1rem;
+  padding-bottom: 2.7rem;
+}
+
 html body main .btndiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -771,6 +776,9 @@ html body main .kungsleden article h2 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  html body main .tip1, html body main .tip2, html body main .tip3 {
+    padding: 3rem 7rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -793,6 +801,9 @@ html body main .kungsleden article h2 {
     padding-bottom: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  html body main .tip1, html body main .tip2, html body main .tip3 {
+    padding: 3rem 7rem;
   }
 }
 
@@ -1242,6 +1253,7 @@ html body main footer {
   background-color: #041a29;
   color: white;
   padding: 1rem 0;
+  margin-top: 3rem;
 }
 
 html body main footer section {
