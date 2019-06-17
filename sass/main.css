@@ -8,6 +8,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -89,11 +93,27 @@ h5 {
 }
 
 .btn {
-  border: solid black 1px;
+  border: solid #041a29 1px;
+  color: #041a29;
   border-radius: 3px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: right;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background: #041a29;
+  color: white;
+}
+
+.btndark {
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  color: white;
+}
+
+.btndark:hover {
+  background: white;
+  color: #041a29;
 }
 
 a {
@@ -101,6 +121,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -182,11 +206,27 @@ h5 {
 }
 
 .btn {
-  border: solid black 1px;
+  border: solid #041a29 1px;
+  color: #041a29;
   border-radius: 3px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: right;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background: #041a29;
+  color: white;
+}
+
+.btndark {
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  color: white;
+}
+
+.btndark:hover {
+  background: white;
+  color: #041a29;
 }
 
 html body main .hero {
@@ -277,6 +317,15 @@ html body main .grid .img-utrustning {
   background-size: cover;
 }
 
+html body main .grid .img-utrustning:hover h2 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
+}
+
 html body main .grid .img-vandringar {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -284,6 +333,15 @@ html body main .grid .img-vandringar {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/benjamin-davies-332625-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/benjamin-davies-332625-unsplash.jpg);
   background-size: cover;
+}
+
+html body main .grid .img-vandringar:hover h2 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
 }
 
 html body main .grid .img-destination {
@@ -296,6 +354,15 @@ html body main .grid .img-destination {
   background-position: center center;
 }
 
+html body main .grid .img-destination:hover h2 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
+}
+
 html body main .grid .img-bloggare {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -305,6 +372,15 @@ html body main .grid .img-bloggare {
   background-size: cover;
 }
 
+html body main .grid .img-bloggare:hover h2 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
+}
+
 html body main .grid .img-tips {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -312,6 +388,15 @@ html body main .grid .img-tips {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
   background-size: cover;
+}
+
+html body main .grid .img-tips:hover h2 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transform: translate(0.5rem, -0.5rem);
+          transform: translate(0.5rem, -0.5rem);
 }
 
 html body main .grid section {
@@ -396,6 +481,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -477,11 +566,27 @@ h5 {
 }
 
 .btn {
-  border: solid black 1px;
+  border: solid #041a29 1px;
+  color: #041a29;
   border-radius: 3px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: right;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background: #041a29;
+  color: white;
+}
+
+.btndark {
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  color: white;
+}
+
+.btndark:hover {
+  background: white;
+  color: #041a29;
 }
 
 html body main nav {
@@ -529,13 +634,6 @@ html body main .btndiv {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1.5rem;
-}
-
-html body main .btndiv .btn {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 html body main .abisko {
@@ -703,6 +801,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -784,11 +886,27 @@ h5 {
 }
 
 .btn {
-  border: solid black 1px;
+  border: solid #041a29 1px;
+  color: #041a29;
   border-radius: 3px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: right;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background: #041a29;
+  color: white;
+}
+
+.btndark {
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  color: white;
+}
+
+.btndark:hover {
+  background: white;
+  color: #041a29;
 }
 
 html body main .equp {
@@ -984,6 +1102,10 @@ a {
   color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 :root {
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;
@@ -1065,11 +1187,27 @@ h5 {
 }
 
 .btn {
-  border: solid black 1px;
+  border: solid #041a29 1px;
+  color: #041a29;
   border-radius: 3px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  float: right;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background: #041a29;
+  color: white;
+}
+
+.btndark {
+  border: solid white 1px;
+  border-radius: 3px;
+  padding: 0.1rem 1.5rem;
+  color: white;
+}
+
+.btndark:hover {
+  background: white;
+  color: #041a29;
 }
 
 html {
@@ -1095,13 +1233,81 @@ html body main footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #041a29;
+  color: white;
+  padding: 1rem 0;
+}
+
+html body main footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+html body main footer section input {
+  margin: 0.5rem;
+}
+
+html body main footer section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem 0;
+}
+
+html body main footer section article div a {
+  margin: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+html body main footer section article div a img {
+  height: 2rem;
+  width: 2rem;
 }
 
 @media only screen and (min-width: 600px) {
   /* for tablets */
+  html body main footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  html body main footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=main.css.map */

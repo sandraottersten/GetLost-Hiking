@@ -9,7 +9,7 @@ html {
 
         main {
 
-            .hero {
+             .hero {
                 height: 300px;
 
                 article {
@@ -26,7 +26,6 @@ html {
                         color: white;
                         text-align: center;
                     }
-
                     .slider-img {
                         position: relative;
                         width: 100vw;
@@ -72,32 +71,69 @@ html {
                 grid-template-rows: $baseline $baseline $baseline $baseline $baseline;
                 grid-template-areas:
                 "img-ut" "img-va" "img-de" "img-bl" "img-ti";
+                
+               
 
                 .img-utrustning {
                     grid-area: img-ut;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/josiah-weiss-435592-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: 1s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }    
                 .img-vandringar {
                     grid-area: img-va;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/benjamin-davies-332625-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: 1s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }       
                 }
                 .img-destination {
                     grid-area: img-de;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/carl-cerstrand-136810-unsplash.jpg);
                     /* background-size:300%; */  
                     background-position: center center;
+                    &:hover {                    
+                        h2 {
+                            transition: 1s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }
                 .img-bloggare {
                     grid-area: img-bl;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/patrick-hendry-249148-unsplash.jpg);
-                    background-size:cover;  
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: 1s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }
                 .img-tips {
                     grid-area: img-ti;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/alice-donovan-rouse-199230-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: 1s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }        
                 }
                 section {
                     display: flex;
