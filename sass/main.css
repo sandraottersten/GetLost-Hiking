@@ -19,6 +19,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -27,15 +28,27 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin: 0;
+  color:black;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color:black;
 }
 
 .btn {
@@ -62,6 +75,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -70,15 +84,25 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -91,7 +115,8 @@ h4 {
 
 html body main .hero {
   height: 300px;
-  background-image: url(../img/lucas-clara-579404-unsplash.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/lucas-clara-579404-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/lucas-clara-579404-unsplash.jpg);
   background-size: cover;
 }
 
@@ -115,9 +140,18 @@ html body main .hero article {
 }
 
 html body main .hero article h5 {
-  padding: 0 1rem;
+  padding: 1rem;
   color: white;
   text-align: center;
+}
+
+html body main .intro {
+  padding: 3rem;
+  text-align: center;
+}
+
+html body main .intro h4 {
+  margin-bottom: 1.8rem;
 }
 
 html body main .grid {
@@ -155,7 +189,8 @@ html body main .grid .img-destination {
   grid-area: img-de;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/carl-cerstrand-136810-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/carl-cerstrand-136810-unsplash.jpg);
-  background-size: cover;
+  background-size: 300%;
+  background-position: center center;
 }
 
 html body main .grid .img-bloggare {
@@ -176,6 +211,20 @@ html body main .grid .img-tips {
   background-size: cover;
 }
 
+html body main .grid section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+html body main .grid section h2 {
+  margin: .5rem;
+  line-height: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -192,6 +241,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -200,15 +250,25 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -449,6 +509,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -457,15 +518,25 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
-  font-size: 1.5rem;
+ font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -492,6 +563,7 @@ h1 {
   text-transform: uppercase;
   color: white;
   margin: 0;
+  font-weight: 400;
 }
 
 h2 {
@@ -500,15 +572,25 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-weight: 400;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 h4 {
   text-transform: uppercase;
   font-size: 20px;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
