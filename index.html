@@ -5,33 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="grt-responsive-menu.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <nav>
-            <div>
-                <img src="img/group.svg" alt="logo">
+        <header>
+            <div class="menu-container">
+                <div class="grt-menu-row">
+                    <div class="grt-menu-logo">
+                        <a href="index.html"  class="grt-logo"><img src="./img/logo.svg"></a>
+                    </div>
+                    <div class="grt-menu-right">
+                        <nav>
+                            <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
+                            <ul class="grt-menu">
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="top5.html">Bästa vandringar</a></li>
+                                <li><a href="tips.html">Tips</a></li>				
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#">Destinationer</a>
-                <a href="#">Om oss</a>
-                <a href="#">Kontakt</a>
-            </div>
-        </nav>
-        <section class="hero">
+        </header>
+        <a href="top5.html" <section class="hero">
             <article>
-                <h1>top 5</h1>
-                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                    <div class="slider-img">
+                        <img src="img/lucas-clara-579404-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>    
+                    </div>
+
+                    <div class="slider-img">
+                        <img src="img/tim-swaan-45717-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>     
+                    </div>
+
+                    <div class="slider-img">
+                        <img src="img/nina-lindgren-147684-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>        
+                    </div>
+                    
+                    <div class="slider-img">
+                        <img src="img/benjamin-davies-332625-unsplash.jpg" alt="">
+                        <div class="img-text">
+                            <h1>top 5</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
+                        </div>    
+                    </div>
+             
             </article>
-        </section>
+        </section></a>
         <section class="intro">
             <h4>Lorem ipsum dolor</h4>
             <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h5>
         </section>
         <section class="grid">
             <section class="img-utrustning">
-                <h2>välj rätt <br> utrustning <span>></span></h2>            
+                <a href="equipment.html"><h2>välj rätt <br> utrustning <span>></span></h2></a>            
             </section>
             <section class="img-vandringar">
                 <h2>säsongens bästa <br> vandringar <span>></span></h2>             
@@ -43,24 +83,60 @@
                 <h2>följ vår <br> bloggare <span>></span></h2>
             </section>
             <section class="img-tips">
-                <h2>tips för <br> nybörjaren <span>></span></h2>
+                <a href="tips.html"><h2>tips för <br> nybörjaren <span>></span></h2></a>
             </section>
         </section>
-<!--         <footer>
+         <footer>
             <section>
-                <h4>nyhetsbrev</h4>
+                <h4>Nyhetsbrev</h4>
                 <input type="text">
-                <a class="btn" href="#">skicka</a>
+                <a class="btndark" href="#">Skicka</a>
             </section>
             <section>
-                <h4>kontakt</h4>
+                <h4>Kontakt</h4>
                 <p>0795-6473838</p>
                 <p>info@getlost.se</p>
             </section>
             <section>
-                <h4>följ oss</h4>
+                <h4>Följ oss</h4>                    
+                <article>
+                    <div>
+                        <a href="http://www.facebook.com">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Visit us on Facebook">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.instagram.com">
+                            <img src="http://pngimg.com/uploads/instagram/instagram_PNG9.png" alt="Visit us on Instagram">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.twitter.com">
+                            <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png" alt="Visit us on Twitter">
+                        </a>
+                    </div>
+                </article>
             </section>
-        </footer> -->
+        </footer> 
     </main>
 </body>
+
+<script src="grt-responsive-menu.js"></script>
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slider-img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+
+</script>
 </html>

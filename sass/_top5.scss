@@ -9,8 +9,8 @@ html {
             nav {
                 display:flex;
                 flex-direction: column;
-                
-            }
+            } 
+        
 
             footer {
                 display:flex;
@@ -20,17 +20,37 @@ html {
             }
             .intro{
                 article{
+                    padding: 3rem;
                     text-align: center;
-                h1{
+                h3{
                     color: black;
-                    
                 }
             }
         }
+
+            .tip1, .tip2, .tip3{
+            padding: 3rem;
+            h4{
+                padding-top: 1rem;
+                padding-bottom: 2.7rem;
+            }
+            }
+
+            .btndiv{
+                display: flex;
+                flex-direction: column;
+                align-items: center;                
+                padding-top: 1.5rem;
+                
+                .btn{
+                   
+                }
+            }
             .abisko {
                 height: 300px;
                 background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
                 background-size:cover; 
+                background-position: center center;
                 article {
                     height: 300px;
                     display: flex;
@@ -38,24 +58,26 @@ html {
                     justify-content: flex-end;
                     align-items: left;
                     padding-top: 6rem;
-                    padding-bottom: 6rem;
                     h1{
-                        font-size: 10rem;
-                        margin-bottom: -5rem;
+                        font-size: 8rem;
+                        margin-bottom: -1.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1rem;
                     }
-                    h5{
-                        font-size: 2rem;
+                    h2{
                         color: white;
-                        padding-bottom: 3rem;
-                        padding-left: 0.5rem;
+                        padding-bottom: 6.5rem;
+                        padding-left: 1rem;
                     }
                 }       
         
             }
+            
             .gammelskogen {
                 height: 300px;
                 background-image: url(../img/tim-swaan-45717-unsplash.jpg);
                 background-size:cover; 
+                background-position: center center;
                 article {
                     height: 300px;
                     display: flex;
@@ -64,14 +86,15 @@ html {
                     align-items: left;
                     padding-top: 6rem;
                     h1{
-                        font-size: 10rem;
-                        margin-bottom: -5rem;
+                        font-size: 8rem;
+                        margin-bottom: -1.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1rem;
                     }
-                    h5{
-                        font-size: 2rem;
+                    h2{
                         color: white;
-                        padding-bottom: 3rem;
-                        padding-left: 0.5rem;
+                        padding-bottom: 6.5rem;
+                        padding-left: 1rem;
                     }
                 }
 
@@ -79,7 +102,8 @@ html {
             .kungsleden {
                 height: 300px;
                 background-image: url(../img/lucas-clara-579404-unsplash.jpg);
-                background-size:cover; 
+                background-size:cover;
+                background-position: center center; 
                 article {
                     height: 300px;                        display: flex;
                     flex-direction: column;
@@ -87,14 +111,15 @@ html {
                     align-items: left;
                     padding-top: 6rem;
                     h1{
-                        font-size: 10rem;
-                        margin-bottom: -5rem;
+                        font-size: 8rem;
+                        margin-bottom: -1.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        padding-left: 1rem;
                     }
-                    h5{
-                        font-size: 2rem;
+                    h2{
                         color: white;
-                        padding-bottom: 3rem;
-                        padding-left: 0.5rem;
+                        padding-bottom: 6.5rem;
+                        padding-left: 1rem;
                     }
 
                 }
@@ -103,3 +128,58 @@ html {
         }
     }
 }
+    @media only screen and (min-width: 600px) {
+        /* for tablets */
+        
+        html {
+            body {
+                main {
+                    .btndiv{
+                        display: flex;
+                        flex-direction: column;
+                        align-items:flex-end;                
+                        padding-top: 1.5rem;
+                        
+                        .btn{
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                        }
+                    }
+                    .tip1, .tip2, .tip3{
+                        padding: 3rem 7rem;
+                        }
+                }
+            }
+      }
+    }
+    
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        
+        html {
+            body {
+                main {
+                    .btndiv{
+                        display: flex;
+                        flex-direction: column;
+                        align-items:flex-end;                
+                        padding-top: 1.5rem;
+                        
+                        .btn{
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 2rem;
+                            padding-right: 2rem;
+                        }
+                    }
+                    .tip1, .tip2, .tip3{
+                        padding: 3rem 7rem;
+                        }
+                }
+            }
+      }
+    }
+       
