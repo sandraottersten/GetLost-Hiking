@@ -53,3 +53,54 @@ h5 {
     margin: 0;
     padding: 0;
 }
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+    
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+}
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 50px;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+
+}
