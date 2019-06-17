@@ -1008,11 +1008,7 @@ html body {
 }
 
 html body main {
-  /*   nav {
-                display:flex;
-                flex-direction: column;
-                
-            } */
+  margin: 0;
 }
 
 html body main footer {
