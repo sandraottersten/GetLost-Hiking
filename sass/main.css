@@ -209,7 +209,7 @@ html body main .hero article .slider-img {
 }
 
 html body main .hero article .slider-img img {
-  width: 500px;
+  width: 600px;
 }
 
 html body main .hero article .slider-img .img-text {
@@ -314,9 +314,6 @@ html body main .grid section h2 {
 
 @media only screen and (min-width: 600px) {
   /* for tablets */
-  html body {
-    background-color: red;
-  }
   html body main .hero {
     height: 430px;
   }
@@ -355,9 +352,6 @@ html body main .grid section h2 {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  html body {
-    background-color: pink;
-  }
   html body main .hero {
     height: 530px;
   }
