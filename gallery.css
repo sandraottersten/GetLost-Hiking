@@ -20,10 +20,11 @@ div.gallery1 img {
     margin: 0;
 }
 div.desc {
+    padding-top: 30px;
+    padding-bottom: 30px; 
     max-width: 80vw;
-    text-align: left;
     border: transparent;
-    margin-bottom: 40px;
+margin: 0 auto;
 }
 
 * {
