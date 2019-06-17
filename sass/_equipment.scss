@@ -22,6 +22,7 @@ html {
             .grid {              
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 560px 560px 560px;
                 grid-gap: 0;
 
                     .card {
@@ -101,7 +102,11 @@ html {
                         width: 100%;
                         height: 100%;
                         backface-visibility: hidden;
-                    
+                        
+                        &.flipped {
+                            transform: rotateY(180deg);
+                            
+                        }
                     
                     }
                 
@@ -123,13 +128,10 @@ html {
                 max-width: 90vw;
                 width: 100%;
                 margin: 0 auto;
-                    h1 {
-                        padding: 1rem 0rem;
+                    h3 {
+                        
                         color:black;
-                    }
-                    h5 {
-                        padding: 1rem 0rem;
-                    }
+                    }                    
                 }
                 .grid {
                     max-width: 90vw;
