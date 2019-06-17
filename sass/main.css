@@ -920,19 +920,13 @@ h5 {
   color: #041a29;
 }
 
-html body main .equp {
-  max-width: 100vw;
-  width: 100%;
+html body main article .equp {
   padding: 3rem;
+  text-align: center;
 }
 
-html body main .equp h3 {
+html body main article .equp h3 {
   color: black;
-}
-
-html body main .equp h5 {
-  padding: 1rem;
-  max-width: 900px;
 }
 
 html body main .grid {
