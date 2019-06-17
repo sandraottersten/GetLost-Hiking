@@ -19,10 +19,10 @@ html {
                 }
             }
              }
-            .grid {              
+            .grid_e {              
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: 560px 560px 560px;
+                grid-template-rows: 560px 560px 560px 560px 560px 560px 560px 560px 560px;
                 grid-gap: 0;
 
                     .card {
@@ -37,7 +37,9 @@ html {
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-end;                          
-                        
+                        h2 {
+                            margin: .5rem;
+                        }
                         &#shoe {
                             background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)), url(../img/christopher-jolly-147389-unsplash.jpg);
                             background-size:cover; 
@@ -133,13 +135,14 @@ html {
                         color:black;
                     }                    
                 }
-                .grid {
+                .grid_e {
                     max-width: 90vw;
                     width: 100%;
                     padding: 0;
                     margin: 0 auto;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
+                    grid-template-columns: repeat(2, 1fr);                    
+                    grid-template-rows: 560px 560px 560px 560px 560px;
+                    grid-gap: 1rem;
 
                     .card {   
                         height: 100%;
@@ -170,13 +173,14 @@ html {
                         padding: 1rem 0rem;
                     }
                 }
-                .grid {
+                .grid_e {
                     max-width: 90vw;
                     width: 100%;
                     padding: 0;
                     margin: 0 auto;
                     grid-template-columns: repeat(3, 1fr);
-                    grid-gap: 3rem;
+                    grid-template-rows: 560px 560px 560px;
+                    grid-gap: 1rem;
 
                     .card {   
                         height: 100%;

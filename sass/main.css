@@ -236,7 +236,6 @@ html body main .hero {
 html body main .hero article {
   padding: 0;
   margin: 0;
-  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,17 +250,18 @@ html body main .hero article {
       -ms-flex-align: left;
           align-items: left;
   overflow: hidden;
+  text-align: center;
 }
 
 html body main .hero article h5 {
   color: white;
   text-align: center;
+  margin-top: 1rem;
 }
 
 html body main .hero article .slider-img {
   position: relative;
   width: 100vw;
-  text-align: center;
 }
 
 html body main .hero article .slider-img img {
@@ -270,9 +270,11 @@ html body main .hero article .slider-img img {
 
 html body main .hero article .slider-img .img-text {
   position: absolute;
-  bottom: 8px;
-  left: 10px;
+  bottom: 1rem;
+  left: 3rem;
+  right: 3rem;
   z-index: 10;
+  max-width: 900px;
 }
 
 html body main .hero article .slider-img::before {
@@ -288,7 +290,7 @@ html body main .hero article .slider-img::before {
 }
 
 html body main .intro {
-  padding: 3rem;
+  padding: 7rem;
   text-align: center;
 }
 
@@ -420,6 +422,7 @@ html body main .grid section h2 {
   }
   html body main .hero article {
     height: 430px;
+    text-align: left;
   }
   html body main .hero article .slider-img img {
     width: 100vw;
@@ -458,9 +461,17 @@ html body main .grid section h2 {
   }
   html body main .hero article {
     height: 530px;
+    text-align: left;
+  }
+  html body main .hero article h5 {
+    text-align: left;
   }
   html body main .hero article .slider-img img {
     width: 100vw;
+  }
+  html body main .hero article .slider-img .img-text {
+    bottom: 8px;
+    left: 6rem;
   }
   html body main .grid {
     display: -ms-grid;
@@ -599,22 +610,12 @@ html body main nav {
           flex-direction: column;
 }
 
-html body main footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-html body main .intro article {
-  padding: 3rem;
+html body main .intro_t5 article {
   text-align: center;
+  padding: 3rem;
 }
 
-html body main .intro article h3 {
+html body main .intro_t5 article h3 {
   color: black;
 }
 
@@ -642,14 +643,14 @@ html body main .btndiv {
 }
 
 html body main .abisko {
-  height: 300px;
+  height: 400px;
   background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
   background-size: cover;
   background-position: center center;
 }
 
 html body main .abisko article {
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,14 +681,14 @@ html body main .abisko article h2 {
 }
 
 html body main .gammelskogen {
-  height: 300px;
+  height: 400px;
   background-image: url(../img/tim-swaan-45717-unsplash.jpg);
   background-size: cover;
   background-position: center center;
 }
 
 html body main .gammelskogen article {
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,14 +719,14 @@ html body main .gammelskogen article h2 {
 }
 
 html body main .kungsleden {
-  height: 300px;
+  height: 400px;
   background-image: url(../img/lucas-clara-579404-unsplash.jpg);
   background-size: cover;
   background-position: center center;
 }
 
 html body main .kungsleden article {
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,15 +930,17 @@ html body main article .equp h3 {
   color: black;
 }
 
-html body main .grid {
+html body main .grid_e {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: 560px 560px 560px 560px 560px 560px 560px 560px 560px;
+      grid-template-rows: 560px 560px 560px 560px 560px 560px 560px 560px 560px;
   grid-gap: 0;
 }
 
-html body main .grid .card {
+html body main .grid_e .card {
   height: 100%;
   max-width: 100vw;
   width: 100%;
@@ -950,7 +953,7 @@ html body main .grid .card {
           transform-style: preserve-3d;
 }
 
-html body main .grid .card .front {
+html body main .grid_e .card .front {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,73 +970,77 @@ html body main .grid .card .front {
           backface-visibility: hidden;
 }
 
-html body main .grid .card .front#shoe {
+html body main .grid_e .card .front h2 {
+  margin: .5rem;
+}
+
+html body main .grid_e .card .front#shoe {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/christopher-jolly-147389-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/christopher-jolly-147389-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
-html body main .grid .card .front#bag {
+html body main .grid_e .card .front#bag {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/josiah-weiss-435592-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/josiah-weiss-435592-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front#tent {
+html body main .grid_e .card .front#tent {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/sayan-nath-1457796-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/sayan-nath-1457796-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front#under {
+html body main .grid_e .card .front#under {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/nazar-lev-1380176-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/nazar-lev-1380176-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front#shell {
+html body main .grid_e .card .front#shell {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/avel-chuklanov-176331-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/avel-chuklanov-176331-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front#rain {
+html body main .grid_e .card .front#rain {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/nguy-n-ha-1225059-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/nguy-n-ha-1225059-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front#food {
+html body main .grid_e .card .front#food {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/easy-camping-food.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/easy-camping-food.jpg);
   background-size: cover;
 }
 
-html body main .grid .card .front#first {
+html body main .grid_e .card .front#first {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/brian-patrick-tagalog-681929-unsplash.jpg);
   background-size: cover;
 }
 
-html body main .grid .card .front#other {
+html body main .grid_e .card .front#other {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0)), to(#041a29)), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #041a29), url(../img/alice-donovan-rouse-199230-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
 
-html body main .grid .card .front.flipped {
+html body main .grid_e .card .front.flipped {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-html body main .grid .card .back {
+html body main .grid_e .card .back {
   background-color: dodgerblue;
   color: violet;
   -webkit-transform: rotateY(180deg);
@@ -1044,6 +1051,11 @@ html body main .grid .card .back {
           backface-visibility: hidden;
 }
 
+html body main .grid_e .card .back.flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 @media only screen and (min-width: 600px) {
   /* for tablets */
   html body main .equp {
@@ -1051,23 +1063,21 @@ html body main .grid .card .back {
     width: 100%;
     margin: 0 auto;
   }
-  html body main .equp h1 {
-    padding: 1rem 0rem;
+  html body main .equp h3 {
     color: black;
   }
-  html body main .equp h5 {
-    padding: 1rem 0rem;
-  }
-  html body main .grid {
+  html body main .grid_e {
     max-width: 90vw;
     width: 100%;
     padding: 0;
     margin: 0 auto;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
+    -ms-grid-rows: 560px 560px 560px 560px 560px;
+        grid-template-rows: 560px 560px 560px 560px 560px;
+    grid-gap: 1rem;
   }
-  html body main .grid .card {
+  html body main .grid_e .card {
     height: 100%;
     width: 100%;
   }
@@ -1087,16 +1097,18 @@ html body main .grid .card .back {
   html body main .equp h5 {
     padding: 1rem 0rem;
   }
-  html body main .grid {
+  html body main .grid_e {
     max-width: 90vw;
     width: 100%;
     padding: 0;
     margin: 0 auto;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    -ms-grid-rows: 560px 560px 560px;
+        grid-template-rows: 560px 560px 560px;
+    grid-gap: 1rem;
   }
-  html body main .grid .card {
+  html body main .grid_e .card {
     height: 100%;
     width: 100%;
   }
@@ -1241,9 +1253,9 @@ html body main footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #041a29;
   color: white;
   padding: 1rem 0;
@@ -1265,6 +1277,11 @@ html body main footer section {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 1rem 0;
+}
+
+html body main footer section h5 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 html body main footer section input {

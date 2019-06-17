@@ -15,21 +15,21 @@ html {
                 article {
                     padding: 0;
                     margin: 0;
-                    height: 300px;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: left;
                     overflow: hidden;
+                    text-align: center;
 
                     h5 {
                         color: white;
                         text-align: center;
+                        margin-top: 1rem;
                     }
                     .slider-img {
                         position: relative;
                         width: 100vw;
-                        text-align: center;
 
                         img {
                             width: 600px;
@@ -37,9 +37,11 @@ html {
 
                         .img-text {
                             position: absolute;
-                            bottom: 8px;
-                            left: 10px;
+                            bottom: 1rem;
+                            left: 3rem;
+                            right: 3rem;
                             z-index: 10;
+                            max-width: 900px;
                         }
                     }
                     .slider-img::before {
@@ -56,7 +58,7 @@ html {
             }
 
             .intro {
-                padding: 3rem;
+                padding: 7rem;
                 text-align: center;
                 h4 {
                     margin-bottom: 1.8rem;
@@ -159,6 +161,7 @@ html {
 
                     article {
                         height: 430px;
+                        text-align: left;
 
                         .slider-img {
                             img {
@@ -203,11 +206,21 @@ html {
 
                     article {
                         height: 530px;
+                        text-align: left;
+
+                        h5 {
+                            text-align: left;
+                        }
 
                         .slider-img {
                             img {
                                 width: 100vw;
                             }
+                            .img-text {
+                                bottom: 8px;
+                                left: 6rem;
+                            }
+                            
                         }
                     }
                 }
