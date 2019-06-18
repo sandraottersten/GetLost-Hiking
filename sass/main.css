@@ -292,7 +292,7 @@ html body main .hero article .slider-img::before {
 }
 
 html body main .intro {
-  padding: 7rem;
+  padding: 3rem;
   text-align: center;
 }
 
@@ -441,6 +441,9 @@ html body main .grid section h2 {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 1rem 3rem;
+  }
+  html body main .intro {
+    padding: 7rem;
   }
   html body main .grid {
     display: -ms-grid;

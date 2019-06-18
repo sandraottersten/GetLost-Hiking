@@ -58,11 +58,12 @@ html {
             }
 
             .intro {
-                padding: 7rem;
+                padding: 3rem;
                 text-align: center;
                 h4 {
                     margin-bottom: 1.8rem;
                 }
+                
             }
 
             .grid {
@@ -176,6 +177,10 @@ html {
                             }
                         }
                     }
+                }
+                
+                .intro {
+                    padding: 7rem;
                 }
                 .grid {
                     display: grid;
