@@ -944,11 +944,10 @@ html body main .grid_e .card {
   height: 100%;
   max-width: 100vw;
   width: 100%;
-  background-color: transparent;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -963,11 +962,8 @@ html body main .grid_e .card .front {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: absolute;
-  width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  width: 100%;
 }
 
 html body main .grid_e .card .front h2 {
@@ -1040,20 +1036,53 @@ html body main .grid_e .card .front.flipped {
           transform: rotateY(180deg);
 }
 
-html body main .grid_e .card .back {
-  background-color: dodgerblue;
-  color: violet;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  width: 100%;
-  height: 100%;
+html body main .grid_e .card .front:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
-html body main .grid_e .card .back.flipped {
+html body main .grid_e .card .backside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #041a29;
+  color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+html body main .grid_e .card .backside.flipped {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+html body main .grid_e .card .backside p {
+  padding: 2.4rem;
+}
+
+html body main .grid_e .card .backside .down {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
 }
 
 @media only screen and (min-width: 600px) {
