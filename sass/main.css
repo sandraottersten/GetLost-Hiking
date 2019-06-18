@@ -1051,9 +1051,9 @@ html body main .grid_e .card .backside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1062,6 +1062,10 @@ html body main .grid_e .card .backside {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   height: 100%;
@@ -1075,6 +1079,10 @@ html body main .grid_e .card .backside {
 html body main .grid_e .card .backside.flipped {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+}
+
+html body main .grid_e .card .backside h2 {
+  padding-top: 1.5rem;
 }
 
 html body main .grid_e .card .backside p {
