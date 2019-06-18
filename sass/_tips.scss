@@ -5,9 +5,151 @@ html {
 
     body {
 
-        main {
+        main { 
+            
+            .responsive{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0.5rem;
+                max-width: 100vw;
+                width: 100%;
+                margin-bottom: 2rem;
+               
+                .container {                    
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    height: 400px;
+                    margin:0;
+                   
+                    &#var{
+                        background-image: url(../img/var.jpg);
+                        background-size:cover; 
+                    }
+                    &#dos{
+                        background-image: url(../img/dos.jpg);
+                        background-size:cover; 
+                    }
+                    &#nar{
+                        background-image: url(../img/nar.jpg);
+                        background-size:cover; 
+                    }
+                    &#hur{
+                        background-image: url(../img/hur.jpg);
+                        background-size:cover; 
+                    }
+                    h2{
+                        margin: .5rem;
+                        padding: 0;
+                    }
 
-          
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }   
+
+
+                    
+                }
+            }
+            .responsive1{
+                width: 100%; 
+    
+                    .gallery1{
+                        img{
+                            max-width: 100vw;
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                            margin: 0;
+                            .bottom-left {
+                                position: absolute;
+                                bottom: 30px;
+                                left: 30px;
+                            }
+                        }
+                    }
+                    .desc {
+                        padding: 3rem;
+                        h4 {
+                            padding-top: 1rem;
+                            padding-bottom: 2.7rem;
+                        }
+                        
+                        .fa{
+                            display:block;
+                            margin-top: 10px;
+                            text-align: center;
+                        }
+                    }
+            }
+        }
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    html {
+
+        body {
+    
+            main { 
+                
+                .responsive{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 1rem;
+                    max-width: 100vw;
+                    width: 100%;
+                    justify-content: space-around;
+                    align-content: space-between;
+                   
+                    .container {                        
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        height: 400px;
+                        margin:0;
+                        h3{
+                            color: white;
+                        }
+                        &#var{
+                            background-image: url(../img/var.jpg);
+                            background-size:cover; 
+                            margin-left: 2rem;
+                        }
+                        &#dos{
+                            background-image: url(../img/dos.jpg);
+                            background-size:cover;
+                            margin-right: 2rem;
+                        }
+                        &#nar{
+                            background-image: url(../img/nar.jpg);
+                            background-size:cover; 
+                            margin-left: 2rem;
+                        }
+                        &#hur{
+                            background-image: url(../img/hur.jpg);
+                            background-size:cover; 
+                            margin-right: 2rem;
+                        }
+    
+                    }    
+                }
+                
+                .responsive1{
+                    
+                    .desc {
+                        padding: 3rem 7rem;
+                    }
+                        
+                        
+                    
+                    
+                }
+            }
         }
     }
 }

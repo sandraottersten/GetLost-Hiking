@@ -6,9 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="shortcut icon" href="./img/icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="grt-responsive-menu.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+        </script>
     <title>Utrustning</title>
 </head>
 <body>
+        <header>
+                <div class="menu-container">
+                    <div class="grt-menu-row">
+                        <div class="grt-menu-logo">
+                            <a href="index.html" class="grt-logo"><img src="./img/logo.svg"></a>
+                        </div>
+                        <div class="grt-menu-right">
+                            <nav>
+                                <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span
+                                        class="line3"></span></button>
+                                <ul class="grt-menu">
+                                    <li><a href="#">Destinationer</a></li>
+                                    <li><a href="#">Om oss</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
     <main>
         <article>
             <section class="equp" tabindex="0">
@@ -144,6 +168,7 @@
     
 </body>
 </html>
+<script src="grt-responsive-menu.js"></script>
 
 <script>
     function flip(event) {
