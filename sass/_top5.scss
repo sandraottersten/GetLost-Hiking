@@ -2,44 +2,38 @@
 @import 'variables';
 
 html {
-
     body {
-
         main {
             nav {
                 display:flex;
                 flex-direction: column;
-            } 
-        
+            }       
 
             .intro_t5 {
                 article{
                     text-align: center;
                     padding: 3rem;
-                h3{
+                h3 {
                     color: black;
                 }
             }
         }
 
-            .tip1, .tip2, .tip3{
-            padding: 3rem;
-            h4{
-                padding-top: 1rem;
-                padding-bottom: 2.7rem;
-            }
+            .tip1, .tip2, .tip3 {
+                padding: 3rem;
+                h4 {
+                    padding-top: 1rem;
+                    padding-bottom: 2.7rem;
+                }
             }
 
-            .btndiv{
+            .btndiv {
                 display: flex;
                 flex-direction: column;
                 align-items: center;                
-                padding-top: 1.5rem;
-                
-                .btn{
-                   
-                }
+                padding-top: 1.5rem;                
             }
+
             .abisko {
                 height: 400px;
                 background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
@@ -99,7 +93,8 @@ html {
                 background-size:cover;
                 background-position: center center; 
                 article {
-                    height: 400px;                        display: flex;
+                    height: 400px;
+                    display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: left;
