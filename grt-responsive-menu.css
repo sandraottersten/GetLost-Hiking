@@ -134,14 +134,14 @@ ul.grt-menu li.active a:after  {
 
 /* Mobile only style */
 @media (max-width:767px) {
-
+	
 	.grt-mobile-button {
 		display:inline-block;
 		position:absolute;
 		right:0;
 		top:10px;
-		background:#FFF;
-		color:#3d3d3d;
+		background: FFF;
+		color:#3A5B73;
 		margin:0;
 		padding:0;
 		cursor:pointer;
@@ -176,10 +176,12 @@ ul.grt-menu li.active a:after  {
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
+		color: #FFF;
 	}
 
 	ul.open-grt-menu li a {
 		color: white;
+		font-size: 10px;
 	}
 	
 	.grt-mobile-button-open {
@@ -187,22 +189,25 @@ ul.grt-menu li.active a:after  {
 		z-index:99999;
 		right:25px;
 		top:25px;
+		background: #3A5B73;
+		color: #FFF;
+
 	}
 
 	.grt-mobile-button-open .line1 {
 		-webkit-transform: rotate(-45deg) translate(-8px, 5px);
 		transform: rotate(-45deg) translate(-8px, 5px);
-		background: #3A5B73;
+		background:white;
 	}
 
 	.grt-mobile-button-open .line2 {opacity: 0;
-		background: #3A5B73;
+		background:white;
 	}
 	
 	.grt-mobile-button-open .line3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -7px);
 		transform: rotate(45deg) translate(-8px, -7px);
-		background: #3A5B73;
+		background:white;
 	}
 
 	ul.grt-menu li {
@@ -212,6 +217,6 @@ ul.grt-menu li.active a:after  {
 
 	ul.grt-menu li a {
 		padding: 6px 10px;
-		font-size:30px;
+		font-size:20px;
 	}
 }
