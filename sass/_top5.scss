@@ -12,16 +12,10 @@ html {
             } 
         
 
-            footer {
-                display:flex;
-                flex-direction: column;
-
-
-            }
-            .intro{
+            .intro_t5 {
                 article{
-                    padding: 3rem;
                     text-align: center;
+                    padding: 3rem;
                 h3{
                     color: black;
                 }
@@ -47,12 +41,12 @@ html {
                 }
             }
             .abisko {
-                height: 300px;
+                height: 400px;
                 background-image: url(../img/nina-lindgren-147684-unsplash.jpg);
                 background-size:cover; 
                 background-position: center center;
                 article {
-                    height: 300px;
+                    height: 400px;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
@@ -74,12 +68,12 @@ html {
             }
             
             .gammelskogen {
-                height: 300px;
+                height: 400px;
                 background-image: url(../img/tim-swaan-45717-unsplash.jpg);
                 background-size:cover; 
                 background-position: center center;
                 article {
-                    height: 300px;
+                    height: 400px;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
@@ -100,12 +94,12 @@ html {
 
             }
             .kungsleden {
-                height: 300px;
+                height: 400px;
                 background-image: url(../img/lucas-clara-579404-unsplash.jpg);
                 background-size:cover;
                 background-position: center center; 
                 article {
-                    height: 300px;                        display: flex;
+                    height: 400px;                        display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: left;
