@@ -300,6 +300,15 @@ html body main .intro h4 {
   margin-bottom: 1.8rem;
 }
 
+html body main .intro.index {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+html body main .intro.index h4 {
+  padding-top: 2rem;
+}
+
 html body main .grid {
   display: -ms-grid;
   display: grid;
@@ -443,7 +452,14 @@ html body main .grid section h2 {
     padding: 1rem 3rem;
   }
   html body main .intro {
-    padding: 7rem;
+    padding: 3rem 7rem;
+  }
+  html body main .intro.index {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  html body main .intro.index h4 {
+    padding-top: 0rem;
   }
   html body main .grid {
     display: -ms-grid;
@@ -1448,9 +1464,9 @@ html body main footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #041a29;
   color: white;
   padding: 1rem 0;

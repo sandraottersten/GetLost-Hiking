@@ -58,12 +58,17 @@ html {
             }
 
             .intro {
+                
                 padding: 3rem;
                 text-align: center;
                 h4 {
                     margin-bottom: 1.8rem;
                 }
-                
+                &.index{
+                    transform: translateY(40px);
+                    h4{
+                        padding-top:2rem;}
+                }
             }
 
             .grid {
@@ -180,7 +185,14 @@ html {
                 }
                 
                 .intro {
-                    padding: 7rem;
+                    padding: 3rem 7rem;
+                    
+                    &.index{
+                        transform: translateY(20px);
+                        h4{
+                            padding-top:0rem;
+                        }
+                    }
                 }
                 .grid {
                     display: grid;
