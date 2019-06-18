@@ -14,8 +14,7 @@ html {
                 h3 {
                     color:black;
                 }
-                h5{
-
+                h5 {
                 }
             }
              }
@@ -29,16 +28,18 @@ html {
                     height: 100%;
                     max-width: 100vw;
                     width: 100%;
-                    background-color: transparent;
-                    transition: transform 0.8s;
-                    transform-style: preserve-3d;                
+                    transition: transform 1s;
+                    transform-style: preserve-3d;
+                                   
 
                     .front {
                         display: flex;
                         justify-content: flex-start;
-                        align-items: flex-end;                          
+                        align-items: flex-end; 
                         h2 {
                             margin: .5rem;
+                        height: 100%;                        
+                        width: 100%;                         
                         }
                         &#shoe {
                             background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)), url(../img/christopher-jolly-147389-unsplash.jpg);
@@ -85,33 +86,42 @@ html {
                             background-position: center;
                         }
 
-
                         &.flipped {
                             transform: rotateY(180deg);
-                            
                         }
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        backface-visibility: hidden;
+                        
+                        &:hover {
+                            transform: scale(1.05);
+                            transition: 1s transform;
+                            backface-visibility: hidden;
+                        }
                     }
 
                     .back {
-                        background-color: dodgerblue;
-                        color: violet;
-                        transform: rotateY(180deg);
-                        
-                        width: 100%;
-                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        position: absolute;
                         backface-visibility: hidden;
-                        
+                        height: 100%;
+                        width: 100%;                        
+                        background-color: rgba(4, 26, 41, 1);
+                        color:white;             
+                        transform: rotateY(180deg);                        
+
                         &.flipped {
-                            transform: rotateY(180deg);
-                            
+                            transform: rotateY(-180deg);                            
                         }
-                    
-                    }
-                
+                        p {
+                            padding: 2.4rem;
+                        }       
+                        .down{
+                            position: absolute;
+                            bottom: 2.4rem;
+                            left:2.4rem;
+                        }             
+                    }                
                 }            
             }
         }
