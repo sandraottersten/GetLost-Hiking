@@ -97,6 +97,7 @@ ul.grt-menu li a {
 	position:relative;
 	text-decoration: none;
 	text-transform: lowercase;
+	text-transform: uppercase;
 }
 
 
