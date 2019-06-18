@@ -5,100 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sass/main.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/icon2.png" type="image/x-icon">
+    <title>Utrustning</title>
 </head>
 <body>
     <main>
-        <section class="equp">
-            <h1>Välj rätt utrustning</h1>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati praesentium porro nostrum id ex fugiat ab suscipit, doloremque natus! Eligendi sapiente sequi explicabo velit nam. Fuga ex consequuntur sunt aspernatur.</h5>
-        </section>
-        <!--emmet code: (section.inner>article.front>h3^article.back>h1+p)*9-->
-       
-        <section class="grid">
-        <section class="card">
+        <article>
+            <section class="equp" tabindex="0">
+                <h3>Välj rätt utrustning</h3>
+                <h5>Det är en härlig upplevelse att vandra i naturen den blir bättre med rätt utrustning. Här har vi samlat lite saker att tänka på när man ska skaffa sig utrustning inför en vandringsresa. Klicka på bilderna för att få mer information. </h5>
+            </section>  
+        </article>       
+        <section class="card" tabindex="1" role="img" aria-label="[Skor]" onclick="flip(event)">
+        <section class="card" tabindex="1" role="img" aria-label="[Skor]">
             <article class="front" id="shoe">
-                <h3>Skor ></h3>
+                <h2>Skor ></h2>
             </article>
-            <article class="back">
-                <h3>Skor ></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet. Perspiciatis, adipisci quod itaque eius ducimus perferendis sed magnam rem pariatur placeat minus officia alias velit quam, eaque possimus neque.</p>
+            <article class="back" tabindex="2">
+                <h2>Skor ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eveniet. Perspiciatis, adipisci quod itaque eius ducimus perferendis sed magnam rem pariatur placeat minus officia alias velit quam, eaque possimus neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia beatae libero autem enim nihil totam sit quis delectus quae. Fugiat quaerat omnis molestias ab suscipit deserunt quidem? Quo, soluta quaerat?</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" tabindex="3" role="img" aria-label="[Ryggsäck]" onclick="flip(event)">
             <article class="front" id="bag">
-                <h3>Ryggsäck ></h3>
+                <h2>Ryggsäck ></h2>
             </article>
-            <article class="back">
-                <h3>Ryggsäck ></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt saepe voluptas, aut debitis excepturi accusantium cumque mollitia ducimus nostrum sapiente atque animi itaque, consectetur neque accusamus repellendus est enim pariatur!</p>
+            <article class="back" tabindex="4">
+                <h2>Ryggsäck ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique fuga recusandae corrupti cumque expedita aliquid aperiam necessitatibus omnis delectus quod, fugit tenetur dignissimos voluptatibus maxime obcaecati odit. Voluptatum, eius ratione? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt saepe voluptas, aut debitis excepturi accusantium cumque mollitia ducimus nostrum sapiente atque animi itaque, consectetur neque accusamus repellendus est enim pariatur!</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Tält]" onclick="flip(event)">
             <article class="front" id="tent">
-                <h3>Tält ></h3>
+                <h2>Tält ></h2>
             </article>
             <article class="back">
-                <h3>Tält ></h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nihil omnis recusandae quasi ut officia ipsam! Porro, temporibus, sequi facilis nesciunt eum totam, nobis dolores assumenda provident voluptatum nostrum nemo.</p>
+                <h2>Tält ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique vitae repellat soluta dolorum alias placeat fugit. Culpa at quam perferendis perspiciatis. Illum quod a sequi odio voluptatem? Fugit, corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nihil omnis recusandae quasi ut officia ipsam! Porro, temporibus, sequi facilis nesciunt eum totam, nobis dolores assumenda provident voluptatum nostrum nemo.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Underställ]" onclick="flip(event)">
             <article class="front" id="under">
-                <h3>Underställ ></h3>
+                <h2>Underställ ></h2>
             </article>
             <article class="back">
-                <h3>Underställ ></h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, consequuntur id. Omnis maiores aut suscipit ipsam quis, illo fuga ullam, dicta dolore aspernatur temporibus doloremque vel at rem quos expedita.</p>
+                <h2>Underställ ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat eum facere dolor enim minima odio neque aut obcaecati culpa, nisi sit, repudiandae alias tempora labore nobis minus accusantium rem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, consequuntur id. Omnis maiores aut suscipit ipsam quis, illo fuga ullam, dicta dolore aspernatur temporibus doloremque vel at rem quos expedita.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Skal]" onclick="flip(event)">
             <article class="front" id="shell">
-                <h3>Skal ></h3>
+                <h2>Skal ></h2>
             </article>
             <article class="back">
-                <h3>Skal ></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti numquam nobis ex expedita ab officia iste, aliquid eveniet impedit excepturi vitae provident. Nobis ullam repudiandae quidem aliquam nemo repellat fuga.</p>
+                <h2>Skal ></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque porro modi necessitatibus soluta veritatis sunt ducimus, ab sapiente iste laboriosam! Accusantium eos obcaecati asperiores voluptatibus provident ea dolor repellendus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti numquam nobis ex expedita ab officia iste, aliquid eveniet impedit excepturi vitae provident. Nobis ullam repudiandae quidem aliquam nemo repellat fuga.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Regnkläder]" onclick="flip(event)">
             <article class="front" id="rain">
-                <h3>Regnkläder ></h3>
+                <h2>Regnkläder ></h2>
             </article>
             <article class="back">
-                <h3>Regnkläder ></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptas explicabo cumque ut minima exercitationem, assumenda nesciunt. Ex, ipsum error. Beatae ea temporibus iusto voluptatem. Nisi accusantium vel quod dicta.</p>
+                <h2>Regnkläder ></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid aspernatur delectus repellendus nisi neque vitae, suscipit dolores, corrupti praesentium dolore omnis iste, voluptate tenetur id dignissimos impedit? Reprehenderit, rerum laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptas explicabo cumque ut minima exercitationem, assumenda nesciunt. Ex, ipsum error. Beatae ea temporibus iusto voluptatem. Nisi accusantium vel quod dicta.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Mat]" onclick="flip(event)">
             <article class="front" id="food">
-                <h3>Mat ></h3>
+                <h2>Mat ></h2>
             </article>
             <article class="back">
-                <h3>Mat ></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident et blanditiis laborum quam ex doloremque soluta architecto commodi reprehenderit hic quas modi explicabo, mollitia similique perferendis quisquam, animi, nemo numquam.</p>
+                <h2>Mat ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ab. Architecto maxime eum, nisi officiis modi illo quo velit reprehenderit blanditiis tenetur dicta, suscipit iure deleniti tempore eveniet, quibusdam minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident et blanditiis laborum quam ex doloremque soluta architecto commodi reprehenderit hic quas modi explicabo, mollitia similique perferendis quisquam, animi, nemo numquam.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Första Hjälpen]" onclick="flip(event)">
             <article class="front" id="first">
-                <h3>Första hjälpen ></h3>
+                <h2>Första hjälpen ></h2>
             </article>
             <article class="back">
-                <h3>Första hjälpen ></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus laudantium molestias nostrum magni blanditiis quas eaque odit quod. Fugiat reiciendis esse accusamus aspernatur obcaecati aliquid ut facere iste ea.</p>
+                <h2>Första hjälpen ></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia commodi, eos harum illo exercitationem sunt consequuntur quisquam ea voluptas repudiandae dolorem, minus dolores rem tempora eius sequi aspernatur. Officiis, totam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus laudantium molestias nostrum magni blanditiis quas eaque odit quod. Fugiat reiciendis esse accusamus aspernatur obcaecati aliquid ut facere iste ea.</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
-        <section class="card">
+        <section class="card" role="img" aria-label="[Övrigt]" onclick="flip(event)">
             <article class="front" id="other">
-                <h3>Övrigt</h3>
+                <h2>Övrigt ></h2>
             </article>
             <article class="back">
-                <h3>Övrigt</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nemo omnis ex, veniam fugiat similique repellat voluptas ullam itaque iusto, nulla consequatur magnam! Qui, libero ullam ipsa reprehenderit veniam quia!</p>
+                <h2>Övrigt ></h2>
+                <p>Myggmedel, m.m. Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed, at aperiam recusandae eum corrupti, perferendis officiis quasi hic ab eligendi id. Commodi architecto tenetur laboriosam saepe consequatur soluta porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nemo omnis ex, veniam fugiat similique repellat voluptas ullam itaque iusto, nulla consequatur magnam! Qui, libero ullam ipsa reprehenderit veniam quia!</p>
+                <h2 class="down"><</h2>
             </article>
         </section>
     </section>
+    <footer>
+        <section>
+            <h5>Nyhetsbrev</h5>
+            <input type="text">
+            <a class="btndark" href="#">Skicka</a>
+        </section>
+        <section>
+            <h5>Kontakt</h5>
+            <h4>Kontakt</h4>
+            <p>0795-6473838</p>
+            <p>info@getlost.se</p>
+        </section>
+        <section>
+            <h4>Följ oss</h4>                    
+            <article>
+                <div>
+                    <a href="http://www.facebook.com">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Visit us on Facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.instagram.com">
+                        <img src="http://pngimg.com/uploads/instagram/instagram_PNG9.png" alt="Visit us on Instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.twitter.com">
+                        <img src="https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png" alt="Visit us on Twitter">
+                    </a>
+                </div>
+            </article>
+        </section>
+    </footer> 
     </main>
     
 </body>
 </html>
+
+<script>
+    function flip(event) {
+        var element = event.currentTarget;
+        if (element.className === "card"){
+            
+            if(element.style.transform =="rotateY(180deg)"){
+                element.style.transform = "rotateY(0deg)";
+                    
+            }
+            else {
+                element.style.transform = "rotateY(180deg)";
+                            
+            }
+        }
+    };
+</script>
+     

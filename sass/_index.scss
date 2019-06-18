@@ -9,31 +9,56 @@ html {
 
         main {
 
-            .hero {
+             .hero {
                 height: 300px;
-                background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/lucas-clara-579404-unsplash.jpg);
-                background-size:cover; 
+
                 article {
                     padding: 0;
                     margin: 0;
-                    height: 300px;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
-                    align-items: center;
+                    align-items: left;
+                    overflow: hidden;
+                    text-align: center;
 
                     h5 {
-                        padding: 1rem;
                         color: white;
                         text-align: center;
+                        margin-top: 1rem;
                     }
-                    
+                    .slider-img {
+                        position: relative;
+                        width: 100vw;
 
+                        img {
+                            width: 600px;
+                        }
+
+                        .img-text {
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 3rem;
+                            right: 3rem;
+                            z-index: 10;
+                            max-width: 900px;
+                        }
+                    }
+                    .slider-img::before {
+                        content: '';
+                        position:absolute;
+                        top:0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1));
+                        z-index: 1;
+                    }
                 } 
             }
 
             .intro {
-                padding: 3rem;
+                padding: 7rem;
                 text-align: center;
                 h4 {
                     margin-bottom: 1.8rem;
@@ -43,36 +68,74 @@ html {
             .grid {
                 display: grid;
                 width:100vw;
-                grid-template-columns: repeat (1, 1fr);
+                grid-gap: .5rem;
+                grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: $baseline $baseline $baseline $baseline $baseline;
                 grid-template-areas:
                 "img-ut" "img-va" "img-de" "img-bl" "img-ti";
+                
+               
 
                 .img-utrustning {
                     grid-area: img-ut;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/josiah-weiss-435592-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }    
                 .img-vandringar {
                     grid-area: img-va;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/benjamin-davies-332625-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }       
                 }
                 .img-destination {
                     grid-area: img-de;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/carl-cerstrand-136810-unsplash.jpg);
-                    background-size:300%;  
+                    /* background-size:300%; */  
                     background-position: center center;
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }
                 .img-bloggare {
                     grid-area: img-bl;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/patrick-hendry-249148-unsplash.jpg);
-                    background-size:cover;  
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }    
                 }
                 .img-tips {
                     grid-area: img-ti;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),  rgba(255, 255, 255, 0), rgba(4, 26, 41, 1)),url(../img/alice-donovan-rouse-199230-unsplash.jpg);
-                    background-size:cover;     
+                    background-size:cover;
+                    &:hover {                    
+                        h2 {
+                            transition: .3s;
+                            transition-timing-function: ease-in-out;
+                            transform: translate(.5rem, -.5rem );
+                        }                        
+                    }        
                 }
                 section {
                     display: flex;
@@ -85,4 +148,96 @@ html {
             }
         }
     }
+}
+
+@media only screen and (min-width: 600px) {
+    /* for tablets */
+    
+    html {
+        body {
+            main {
+                .hero {
+                    height: 430px;
+
+                    article {
+                        height: 430px;
+                        text-align: left;
+
+                        .slider-img {
+                            img {
+                                width: 100vw;
+                            }
+                            .img-text {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 1rem 3rem;
+        
+                            }
+                        }
+                    }
+                }
+                .grid {
+                    display: grid;
+                    margin: 1rem;
+                    width:95vw;
+                    grid-gap: 1rem;
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    grid-template-rows: $baseline $baseline $baseline;
+                    grid-template-areas:
+                    "img-ut img-va" 
+                    "img-de img-de" 
+                    "img-bl img-ti";
+                }   
+
+            }
+        }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    html {
+        body {
+            main {
+                .hero {
+                    height: 530px;
+
+                    article {
+                        height: 530px;
+                        text-align: left;
+
+                        h5 {
+                            text-align: left;
+                        }
+
+                        .slider-img {
+                            img {
+                                width: 100vw;
+                            }
+                            .img-text {
+                                bottom: 8px;
+                                left: 6rem;
+                            }
+                            
+                        }
+                    }
+                }
+                .grid {
+                    display: grid;
+                    margin: 1.5rem;
+                    width:96vw;
+                    grid-gap: 1.5rem;
+                    grid-template-columns: repeat(3, 1fr) !important;
+                    grid-template-rows: $baseline $baseline $baseline;
+                    grid-template-areas:
+                    "img-ut img-va img-va" 
+                    "img-de img-de img-de" 
+                    "img-bl img-bl img-ti";
+                }   
+
+            }
+        }
+  }
 }
