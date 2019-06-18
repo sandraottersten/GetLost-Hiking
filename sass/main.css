@@ -440,7 +440,7 @@ html body main .grid section h2 {
             align-items: flex-start;
     padding: 1rem 3rem;
   }
-  
+
   html body main .grid {
     display: -ms-grid;
     display: grid;
@@ -1079,7 +1079,7 @@ html body main .grid_e .card .back.flipped {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 560px 560px 560px 560px 560px;
-        grid-template-rows: 560px 560px 560px 560px 560px;
+        grid-template-rows: 60px 560px 560px 560px 560px;
     grid-gap: 1rem;
   }
   html body main .grid_e .card {
